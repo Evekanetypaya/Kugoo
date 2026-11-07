@@ -1,0 +1,240 @@
+.contactSect1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .breadcrumbsRow {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(136, 136, 136, 1);
+
+            .homeIcon {
+                width: 14px;
+                height: 14px;
+                object-fit: contain;
+                opacity: 0.6;
+            }
+
+            .breadcrumbLink {
+                color: rgba(136, 136, 136, 1);
+                text-decoration: none;
+                transition: color 0.2s;
+                
+                &:hover { 
+                    color: rgba(40, 39, 57, 1); 
+                }
+            }
+
+            .breadcrumbCurrent {
+                color: rgba(40, 39, 57, 1);
+            }
+        }
+
+        .heroBanner {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: rgba(111, 115, 238, 1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            overflow: hidden;
+
+            .bannerBg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.3;
+                z-index: 1;
+            }
+
+            .heroTitle {
+                color: #ffffff;
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                z-index: 2;
+                position: relative;
+            }
+        }
+
+        .cityTabs {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+
+            .tabItem {
+                padding: 16px 32px;
+                background-color: rgba(246, 248, 251, 1);
+                border-radius: 5px;
+                color: rgba(100, 100, 100, 1);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s;
+                border: 1px solid transparent;
+
+                &:hover {
+                    background-color: rgba(235, 235, 235, 1);
+                }
+
+                &.active {
+                    background-color: transparent;
+                    border-color: rgba(111, 115, 238, 1);
+                    color: rgba(111, 115, 238, 1);
+                }
+            }
+        }
+
+        .contentSplit {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: stretch;
+
+            .infoCol {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .infoTitle {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                .infoCard {
+                    background-color: rgba(250, 251, 253, 1);
+                    border-radius: 10px;
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .infoRow {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 16px;
+
+                        .infoIcon {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                            flex-shrink: 0;
+                            margin-top: 2px;
+
+                            &.smallIcon {
+                                width: 14px;
+                                height: 14px;
+                                margin-top: 4px;
+                            }
+                        }
+
+                        .placeholderIcon {
+                            background: transparent;
+                        }
+
+                        .infoContent {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            .addressLine {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 16px;
+
+                                .addressText {
+                                    color: rgba(40, 39, 57, 1);
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                }
+
+                                .routeLink {
+                                    color: rgba(111, 115, 238, 1);
+                                    font-size: 13px;
+                                    text-decoration: none;
+                                    opacity: 0.8;
+
+                                    &:hover {
+                                        opacity: 1;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                            .scheduleText {
+                                color: rgba(136, 136, 136, 1);
+                                font-size: 13px;
+                            }
+
+                            &.phonesGrid {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 40px;
+
+                                .phoneBlock {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 4px;
+
+                                    .phoneLabel {
+                                        color: rgba(136, 136, 136, 1);
+                                        font-size: 12px;
+                                    }
+
+                                    .phoneValue {
+                                        color: rgba(40, 39, 57, 1);
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+
+                            .plainText {
+                                color: rgba(60, 60, 60, 1);
+                                font-size: 13px;
+                                line-height: 1.5;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mapCol {
+                width: 55%;
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+
+                .mapImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    min-height: 400px;
+                }
+            }
+        }
+    }
+}

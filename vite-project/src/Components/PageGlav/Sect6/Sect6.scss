@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.adv {
+    width: 94vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 0 70px;
+    .text_title {
+        color: rgba(40, 39, 57, 1);
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.35;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .text_sub {
+        margin-top: 18px;
+        color: rgba(40, 39, 57, 1);
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .adv_tabs {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 14px;
+        .tab {
+            height: 40px;
+            padding: 0 22px;
+            border: 1px solid rgba(244, 247, 251, 1);
+            border-radius: 4px;
+            background-color: rgba(244, 247, 251, 1);
+            color: rgba(93, 108, 123, 1);
+            font-size: 15px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: border-color 0.2s;
+            &:hover {
+                border-color: rgba(111, 115, 238, 1);
+            }
+        }
+        .tab_active {
+            border-color: rgba(111, 115, 238, 1);
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(111, 115, 238, 1);
+        }
+    }
+    .adv_grid {
+        margin: 40px auto 0;
+        width: 100%;
+        max-width: 1110px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px 24px;
+        .adv_card {
+            position: relative;
+            min-height: 215px;
+            padding: 28px 26px;
+            border: 1px solid rgba(227, 232, 240, 1);
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 1);
+            .adv_icon {
+                width: 32px;
+                height: 32px;
+                border-radius: 6px;
+                background-color: rgba(238, 239, 253, 1);
+                color: rgba(111, 115, 238, 1);
+                font-size: 17px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .adv_title {
+                margin-top: 22px;
+                color: rgba(40, 39, 57, 1);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.3;
+            }
+            .adv_text {
+                margin-top: 10px;
+                color: rgba(40, 39, 57, 1);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            .adv_link {
+                margin-top: 4px;
+                color: rgba(111, 115, 238, 1);
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+        .adv_catalog {
+            overflow: hidden;
+            border: none;
+            background-color: rgba(244, 247, 251, 1);
+            .catalog_info {
+                position: relative;
+                z-index: 2;
+                margin-top: 62px;
+                .adv_title {
+                    margin-top: 0;
+                }
+                .catalog_link {
+                    margin-top: 10px;
+                    color: rgba(111, 115, 238, 1);
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    span {
+                        margin-left: 6px;
+                    }
+                }
+            }
+            .catalog_img {
+                position: absolute;
+                right: -60px;
+                top: -20px;
+                height: 120%;
+                object-fit: contain;
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+    .video_box {
+        position: relative;
+        margin-top: 70px;
+        width: 100%;
+        height: 625px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        .video_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video_play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(111, 115, 238, 1);
+            font-size: 34px;
+            transition: transform 0.2s;
+            span {
+                margin-left: 6px;
+            }
+        }
+        &:hover .video_play {
+            transform: translate(-50%, -50%) scale(1.06);
+        }
+    }
+}

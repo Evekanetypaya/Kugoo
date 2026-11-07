@@ -1,0 +1,275 @@
+a {
+    text-decoration: none;
+}
+.pageStrSect2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .tabsNav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(235, 235, 235, 1);
+            padding-bottom: 20px;
+
+            .tabItem {
+                font-size: 15px;
+                font-weight: 500;
+                color: rgba(136, 136, 136, 1);
+                cursor: pointer;
+                transition: color 0.2s;
+                position: relative;
+
+                &:hover {
+                    color: rgba(40, 39, 57, 1);
+                }
+
+                &.active {
+                    color: rgba(111, 115, 238, 1);
+                    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -21px;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-color: rgba(111, 115, 238, 1);
+                    }
+                }
+            }
+        }
+
+        .infoBlock {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+
+            .infoLeft {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .infoTitle {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    text-transform: uppercase;
+                }
+
+                .infoText {
+                    color: rgba(100, 100, 100, 1);
+                    font-size: 14px;
+                    line-height: 1.6;
+                }
+            }
+
+            .infoRight {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .blockTitle {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .complectBlock {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .complectGrid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 24px 20px;
+
+                        .complectItem {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            gap: 12px;
+
+                            .itemIcon {
+                                width: 20px;
+                                height: 20px;
+                                object-fit: contain;
+                                flex-shrink: 0;
+                            }
+
+                            .itemTextCol {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4px;
+
+                                .itemName {
+                                    color: rgba(40, 39, 57, 1);
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+
+                                .itemDesc {
+                                    color: rgba(111, 115, 238, 1);
+                                    font-size: 12px;
+                                    text-decoration: none;
+                                    &:hover { opacity: 0.8; }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .featuresBlock {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .featuresList {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 12px;
+
+                        .featureTag {
+                            background-color: rgba(246, 248, 251, 1);
+                            color: rgba(136, 136, 136, 1);
+                            padding: 12px 24px;
+                            border-radius: 5px;
+                            font-size: 13px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .testDriveBanner {
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(246, 248, 251, 1);
+            border-radius: 10px;
+            overflow: hidden;
+            height: 340px;
+
+            .bannerImageCol {
+                width: 45%;
+                display: flex;
+
+                .bannerImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .bannerFormCol {
+                width: 55%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px 60px;
+                gap: 40px;
+
+                .bannerTextWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .bannerTitle {
+                        color: rgba(40, 39, 57, 1);
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 1.3;
+                        text-transform: uppercase;
+                    }
+
+                    .bannerSubtitle {
+                        color: rgba(100, 100, 100, 1);
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+                }
+
+                .bannerForm {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .inputRow {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+
+                        .phoneInput {
+                            flex: 1;
+                            border: 1px solid rgba(235, 235, 235, 1);
+                            border-radius: 5px;
+                            padding: 16px 20px;
+                            font-size: 14px;
+                            outline: none;
+
+                            &::placeholder {
+                                color: rgba(180, 180, 180, 1);
+                            }
+                        }
+
+                        .submitBtn {
+                            background-color: rgba(111, 115, 238, 1);
+                            color: #ffffff;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 16px 30px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            cursor: pointer;
+                            transition: opacity 0.2s;
+                            white-space: nowrap;
+
+                            &:hover { opacity: 0.9; }
+                        }
+                    }
+
+                    .agreementRow {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 10px;
+
+                        .checkIcon {
+                            width: 14px;
+                            height: 14px;
+                            object-fit: contain;
+                            margin-top: 2px;
+                            opacity: 0.6;
+                        }
+
+                        .agreementText {
+                            font-size: 11px;
+                            color: rgba(136, 136, 136, 1);
+                            line-height: 1.4;
+
+                            a {
+                                color: rgba(136, 136, 136, 1);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

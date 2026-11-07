@@ -1,0 +1,227 @@
+a {
+    text-decoration: none;
+}
+.sect1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .breadcrumbsRow {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(136, 136, 136, 1);
+
+            .breadcrumbLink {
+                cursor: pointer;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: rgba(40, 39, 57, 1);
+                }
+            }
+
+            .breadcrumbCurrent {
+                color: rgba(40, 39, 57, 1);
+            }
+        }
+
+        .heroBanner {
+            width: 100%;
+            height: 480px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 60px;
+
+            .heroContent {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+                width: 60%;
+                color: #ffffff;
+
+                .locationRow {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 12px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    padding: 8px 16px;
+                    border-radius: 5px;
+
+                    .locationIcon {
+                        width: 14px;
+                        height: 14px;
+                        object-fit: contain;
+                    }
+
+                    .locationText {
+                        font-size: 12px;
+                        font-weight: 400;
+
+                        span {
+                            opacity: 0.7;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .heroTitle {
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                }
+
+                .heroSubtitle {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .featuresRow {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+
+                    .featureItem {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 12px;
+
+                        .featureIconBox {
+                            width: 32px;
+                            height: 32px;
+                            background-color: rgba(255, 255, 255, 0.2);
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .featureIcon {
+                                width: 16px;
+                                height: 16px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .featureText {
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 1.4;
+                            white-space: pre-line;
+                        }
+                    }
+                }
+
+                .heroBtn {
+                    background-color: #ffffff;
+                    color: rgba(111, 115, 238, 1);
+                    border: none;
+                    border-radius: 5px;
+                    padding: 16px 40px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: opacity 0.2s;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+
+        .benefitsBlock {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+
+            .benefitsTextCol {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .benefitsTitle {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                }
+
+                .benefitsListWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .listTitle {
+                        color: rgba(40, 39, 57, 1);
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .listItems {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        .listItem {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 12px;
+
+                            .checkIcon {
+                                width: 18px;
+                                height: 18px;
+                                object-fit: contain;
+                                flex-shrink: 0;
+                            }
+
+                            .listText {
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .benefitsImageCol {
+                width: 45%;
+                display: flex;
+                justify-content: flex-end;
+
+                .benefitsImg {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

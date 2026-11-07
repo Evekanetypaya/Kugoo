@@ -1,0 +1,203 @@
+.contactSect2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        .departmentsCard {
+            background-color: rgba(246, 248, 251, 1);
+            border-radius: 10px;
+            padding: 60px;
+
+            .departmentsGrid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px;
+
+                .deptCol {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 24px;
+
+                    .deptTitle {
+                        color: rgba(40, 39, 57, 1);
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 1.4;
+                        text-transform: uppercase;
+                    }
+
+                    .contactList {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .contactItem {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            gap: 12px;
+
+                            .contactIcon {
+                                width: 16px;
+                                height: 16px;
+                                object-fit: contain;
+                                margin-top: 2px;
+                            }
+
+                            .contactValue {
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 14px;
+                                font-weight: 500;
+                                text-decoration: none;
+                            }
+
+                            .contactTextCol {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4px;
+
+                                .contactSubtext {
+                                    color: rgba(136, 136, 136, 1);
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .downloadLink {
+                        color: rgba(111, 115, 238, 1);
+                        font-size: 11px;
+                        text-decoration: none;
+                        margin-top: -8px;
+                        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .submitAppealBtn {
+                        background-color: rgba(111, 115, 238, 1);
+                        color: #ffffff;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 12px 24px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: opacity 0.2s;
+                        margin-top: 10px;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+
+                    .directorText {
+                        color: rgba(60, 60, 60, 1);
+                        font-size: 13px;
+                        line-height: 1.5;
+
+                        .formLink {
+                            color: rgba(111, 115, 238, 1);
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .subscribeBlock {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .subscribeTextCol {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                max-width: 55%;
+
+                .subscribeTitle {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    text-transform: uppercase;
+                }
+
+                .subscribeSubtext {
+                    color: rgba(100, 100, 100, 1);
+                    font-size: 15px;
+                }
+            }
+
+            .subscribeSocialsCard {
+                background-color: rgba(246, 248, 251, 1);
+                border-radius: 10px;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 340px;
+
+                .socialRowBtn {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 14px 20px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: opacity 0.2s ease;
+
+                    &:hover {
+                        opacity: 0.85;
+                    }
+
+                    .socialIconName {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 12px;
+
+                        img {
+                            width: 16px;
+                            height: 16px;
+                            object-fit: contain;
+                            filter: brightness(0) invert(1);
+                        }
+
+                        span {
+                            font-size: 13px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .socialCount {
+                        font-size: 12px;
+                        font-weight: 400;
+                        opacity: 0.8;
+                    }
+
+                    &.vkBtn { background-color: #4D76A1; }
+                    &.instaBtn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+                    &.youtubeBtn { background-color: #EE3939; }
+                    &.telegramBtn { background-color: #27A4E0; }
+                }
+            }
+        }
+    }
+}

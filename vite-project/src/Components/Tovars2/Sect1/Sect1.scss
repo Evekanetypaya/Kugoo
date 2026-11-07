@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.sc_top {
+    width: 100%;
+    padding: 20px 0 0;
+    .sc_crumbs {
+        width: 94vw;
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        .sc_crumbs_icon {
+            width: 15px;
+            height: 15px;
+        }
+        .sc_crumbs_text {
+            color: rgba(93, 108, 123, 1);
+            font-size: 12px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .sc_crumbs_now {
+            color: rgba(40, 39, 57, 1);
+            cursor: default;
+        }
+    }
+    .sc_banner {
+        position: relative;
+        width: 94vw;
+        max-width: 1380px;
+        height: 200px;
+        margin: 20px auto 0;
+        border-radius: 10px;
+        overflow: hidden;
+        .sc_banner_img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .sc_banner_title {
+            position: absolute;
+            left: 136px;
+            top: 75px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 1.45;
+            letter-spacing: 0.02em;
+        }
+    }
+    .sc_promo {
+        position: relative;
+        width: 94vw;
+        max-width: 1380px;
+        height: 421px;
+        margin: 30px auto 0;
+        border-radius: 10px;
+        overflow: hidden;
+        .sc_promo_bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .sc_promo_drone {
+            position: absolute;
+            left: -126px;
+            top: 13px;
+            width: 914px;
+            height: auto;
+        }
+        .sc_promo_info {
+            position: absolute;
+            left: 770px;
+            top: 67px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .sc_promo_tag {
+                padding: 4px 12px;
+                border-radius: 4px;
+                background-color: rgba(238, 104, 95, 1);
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .sc_promo_title {
+                margin-top: 28px;
+                color: rgba(255, 255, 255, 1);
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 0.02em;
+            }
+            .sc_promo_btn {
+                margin-top: 30px;
+                width: 132px;
+                height: 53px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(40, 39, 57, 1);
+                font-size: 16px;
+                font-weight: 400;
+                cursor: pointer;
+                transition: transform 0.2s;
+                &:hover {
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+}

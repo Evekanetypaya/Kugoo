@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+}
+.sect5 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .processWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        margin: 80px auto;
+
+        .processHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .processTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.3;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            .infoBadge {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 16px;
+                background-color: rgba(111, 115, 238, 1);
+                padding: 20px 24px;
+                border-radius: 5px;
+                color: #ffffff;
+
+                .badgeIcon {
+                    width: 38px;
+                    height: 38px;
+                    object-fit: contain;
+                }
+
+                .badgeText {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .badgeSubtitle {
+                        font-size: 12px;
+                        font-weight: 400;
+                        opacity: 0.8;
+                    }
+
+                    .badgeValue {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .badgeDesc {
+                        font-size: 12px;
+                        font-weight: 400;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        .photoGrid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .photoItem {
+                width: calc((100% - 40px) / 3);
+                height: 260px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.abt {
+    width: 100%;
+    padding: 40px 0 100px;
+    overflow: hidden;
+    .abt_title {
+        color: rgba(40, 39, 57, 1);
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .abt_info {
+        margin: 50px auto 0;
+        width: 94vw;
+        max-width: 1060px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        .abt_info_card {
+            flex: 1;
+            height: 107px;
+            padding: 0 34px;
+            border: 1px solid rgba(227, 232, 240, 1);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+            .abt_info_icon {
+                flex-shrink: 0;
+                width: 52px;
+                height: 52px;
+                object-fit: contain;
+            }
+            .abt_info_text {
+                color: rgba(40, 39, 57, 1);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.45;
+                b {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .abt_slider {
+        position: relative;
+        margin-top: 67px;
+        .abt_track {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            width: max-content;
+            padding-left: max(16px, calc((100vw - 1110px) / 2));
+            .abt_card {
+                width: 255px;
+                text-align: center;
+                .abt_photo {
+                    position: relative;
+                    width: 255px;
+                    height: 318px;
+                    border-radius: 10px 10px 0 0;
+                    overflow: hidden;
+                    background-color: rgba(244, 247, 251, 1);
+                    border-bottom: 2px solid rgba(111, 115, 238, 1);
+                    .abt_img {
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                        width: auto;
+                        max-width: none;
+                    }
+                }
+                .abt_name {
+                    margin-top: 20px;
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .abt_role {
+                    margin-top: 6px;
+                    color: rgba(93, 108, 123, 1);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .abt_arrow {
+            position: absolute;
+            top: 125px;
+            left: calc(max(16px, (100vw - 1110px) / 2) + 806px);
+            z-index: 5;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background-color: rgba(111, 115, 238, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 1);
+            font-size: 38px;
+            line-height: 1;
+            box-shadow: 0 8px 20px rgba(111, 115, 238, 0.4);
+            cursor: pointer;
+            transition: background-color 0.2s;
+            &:hover {
+                background-color: rgba(90, 94, 220, 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+}
+.sect11 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .dropshipContainer {
+        width: 94vw;
+        max-width: 1184px;
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dropshipHeader {
+            text-align: center;
+            margin-bottom: 60px;
+
+            .dropshipTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            .dropshipSubtitle {
+                margin-top: 20px;
+                color: rgba(40, 39, 57, 1);
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        .schemeWrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            padding: 0 20px;
+            .arrowVertical {
+                position: absolute;
+                top: 50%;
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+                transform: translateY(-50%);
+
+                &.arrowUp {
+                    left: 70px;
+                }
+
+                &.arrowDown {
+                    right: 70px;
+                }
+            }
+
+            .schemeRow {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .nodeBlock {
+                    width: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 20px;
+
+                    .iconCircle {
+                        width: 100px;
+                        height: 100px;
+                        background-color: rgba(246, 248, 251, 1);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 50%;
+                            height: 50%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .nodeText {
+                        color: rgba(40, 39, 57, 1);
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 1.4;
+                    }
+                }
+
+                .arrowHorizontal {
+                    width: 32px;
+                    height: 16px;
+                    object-fit: contain;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

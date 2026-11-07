@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.text_title {
+    color: rgba(40, 39, 57, 1);
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.text_center {
+    text-align: center;
+}
+.slider_btn {
+    position: absolute;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(111, 115, 238, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    line-height: 1;
+    box-shadow: 0 4px 14px rgba(111, 115, 238, 0.4);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: rgba(90, 94, 220, 1);
+    }
+}
+
+.reviews {
+    width: 100%;
+    padding: 50px 0 60px;
+    overflow: hidden;
+    .reviews_link {
+        margin-top: 14px;
+        text-align: center;
+        color: rgba(111, 115, 238, 1);
+        font-size: 14px;
+        cursor: pointer;
+        span {
+            margin-left: 4px;
+        }
+    }
+    .rev_rows {
+            .rev_rows {
+        width: 100%;
+        overflow: hidden;
+    }
+        .rev_row {
+            width: 100%;
+            overflow: hidden;
+            .rev_track {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                width: max-content;
+                .rev_item {
+                    position: relative;
+                    flex-shrink: 0;
+                    height: 284px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    .rev_img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .rev_card {
+                        position: absolute;
+                        inset: 0;
+                        padding: 20px 22px;
+                        background-color: rgba(30, 30, 40, 0.55);
+                        backdrop-filter: blur(6px);
+                        .rev_user {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 10px;
+                            .rev_avatar {
+                                width: 36px;
+                                height: 36px;
+                                border-radius: 50%;
+                                background-color: rgba(111, 115, 238, 1);
+                                color: rgba(255, 255, 255, 1);
+                                font-size: 16px;
+                                font-weight: 500;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            .rev_name {
+                                color: rgba(255, 255, 255, 1);
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                            .rev_level {
+                                color: rgba(255, 255, 255, 0.85);
+                                font-size: 14px;
+                            }
+                        }
+                        .rev_stars {
+                            margin-top: 14px;
+                            color: rgba(255, 187, 0, 1);
+                            font-size: 15px;
+                            span {
+                                margin-left: 10px;
+                                color: rgba(255, 255, 255, 0.8);
+                                font-size: 14px;
+                            }
+                        }
+                        .rev_text {
+                            margin-top: 12px;
+                            color: rgba(255, 255, 255, 1);
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+            .track_1 {
+                margin-left: -24px;
+            }
+            .track_2 {
+                margin-left: -178px;
+            }
+        }
+    }
+}
+
+.videos {
+    position: relative;
+    width: 94vw;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 30px 0 60px;
+    .block_top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .block_link {
+            color: rgba(111, 115, 238, 1);
+            font-size: 14px;
+            cursor: pointer;
+            span {
+                margin-left: 4px;
+            }
+        }
+    }
+    .block_sub {
+        margin-top: 14px;
+        max-width: 420px;
+        color: rgba(40, 39, 57, 1);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .videos_row {
+        position: relative;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        overflow: hidden;
+        .video_cover {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .play_btn {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgba(111, 115, 238, 1);
+                font-size: 14px;
+                span {
+                    margin-left: 2px;
+                }
+            }
+            .play_big {
+                width: 80px;
+                height: 80px;
+                font-size: 24px;
+            }
+        }
+        .video_big {
+            flex-shrink: 0;
+            width: 540px;
+            .video_title_big {
+                margin-top: 14px;
+                color: rgba(40, 39, 57, 1);
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .video_small {
+            flex-shrink: 0;
+            width: 350px;
+            .video_title {
+                margin-top: 14px;
+                color: rgba(40, 39, 57, 1);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.3;
+            }
+        }
+        .slider_videos {
+            right: 0;
+            top: 130px;
+        }
+    }
+}
+
+.blog {
+    width: 94vw;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px 0 70px;
+    .blog_row {
+        position: relative;
+        margin-top: 36px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        overflow: hidden;
+        .blog_card {
+            flex-shrink: 0;
+            width: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: rgba(244, 247, 251, 1);
+            .blog_img {
+                width: 100%;
+                height: 234px;
+                object-fit: cover;
+                display: block;
+            }
+            .blog_body {
+                padding: 20px 20px 18px;
+                .blog_title {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 1.3;
+                }
+                .blog_text {
+                    margin-top: 10px;
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.45;
+                }
+                .blog_meta {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 40px;
+                    .meta_item {
+                        color: rgba(93, 108, 123, 1);
+                        font-size: 12px;
+                        span {
+                            margin-right: 4px;
+                            color: rgba(93, 108, 123, 1);
+                        }
+                    }
+                }
+            }
+        }
+        .slider_blog {
+            right: 0;
+            top: 230px;
+        }
+    }
+}

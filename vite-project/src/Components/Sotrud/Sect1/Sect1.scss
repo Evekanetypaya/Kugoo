@@ -1,0 +1,173 @@
+a {
+    text-decoration: none;
+}
+.sect8 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .wholesaleBanner {
+        width: 94vw;
+        max-width: 1184px;
+        margin: 80px auto;
+        background-color: rgba(246, 248, 251, 1);
+        border-radius: 10px;
+        padding: 50px 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .wholesaleInfo {
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+
+            .infoTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .infoSubtitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 40px;
+            }
+
+            .featuresGrid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 30px 40px;
+
+                .featureItem {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+                    width: calc(50% - 20px);
+
+                    .featureIconBox {
+                        width: 44px;
+                        height: 44px;
+                        flex-shrink: 0;
+                        background-color: rgba(228, 233, 255, 1);
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .featureIcon {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .featureText {
+                        color: rgba(40, 39, 57, 1);
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+
+        .wholesaleFormBox {
+            width: 420px;
+            flex-shrink: 0;
+            background-color: rgba(111, 115, 238, 1);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            color: #ffffff;
+
+            .formTitle {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.4;
+                margin-bottom: 12px;
+                text-transform: uppercase;
+            }
+
+            .formSubtitle {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.4;
+                margin-bottom: 30px;
+            }
+
+            .priceForm {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .formInput {
+                    width: 100%;
+                    background-color: rgba(140, 144, 245, 1);
+                    border: none;
+                    border-radius: 5px;
+                    padding: 16px 20px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    outline: none;
+
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+
+                .formBtn {
+                    width: 100%;
+                    background-color: #ffffff;
+                    color: rgba(111, 115, 238, 1);
+                    border: none;
+                    border-radius: 5px;
+                    padding: 16px 20px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: opacity 0.2s;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+                .formAgreement {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap: 10px;
+                    margin-top: 4px;
+                    text-align: left;
+
+                    .customCheckbox {
+                        margin-top: 3px;
+                        cursor: pointer;
+                    }
+
+                    .agreementLabel {
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        color: rgba(255, 255, 255, 0.9);
+
+                        a {
+                            color: #ffffff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

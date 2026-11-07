@@ -1,0 +1,175 @@
+a {
+    text-decoration: none;
+}
+.sect13 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 80px 0;
+
+    .reviewsContainer {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .reviewsHeader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+
+            .reviewsTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.3;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            .reviewsLink {
+                color: rgba(111, 115, 238, 1);
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: none;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .reviewsGrid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            
+            .reviewImageWrapper {
+                width: 100%;
+                height: 240px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                .reviewImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+
+    .socialsContainer {
+        width: 94vw;
+        max-width: 1184px;
+        background-color: rgba(246, 248, 251, 1);
+        border-radius: 10px;
+        padding: 60px 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .socialsTextCol {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            width: 55%;
+
+            .socialsTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.3;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            .socialsSubtitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .socialsLink {
+                color: rgba(111, 115, 238, 1);
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: none;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .socialsButtonsCol {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .socialBtn {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px 20px;
+                border-radius: 5px;
+                color: #ffffff;
+                text-decoration: none;
+                cursor: pointer;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+
+                .socialIconName {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 12px;
+
+                    .socialIcon {
+                        width: 20px;
+                        height: 20px;
+                        object-fit: contain;
+                        filter: brightness(0) invert(1); 
+                    }
+
+                    .socialName {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+
+                .socialCount {
+                    font-size: 14px;
+                    font-weight: 400;
+                    opacity: 0.9;
+                }
+
+                /* Цвета для кнопок соцсетей */
+                &.vk { background-color: rgba(76, 117, 163, 1); }
+                &.insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+                &.youtube { background-color: rgba(255, 0, 0, 1); }
+                &.telegram { background-color: rgba(0, 136, 204, 1); }
+            }
+        }
+    }
+}

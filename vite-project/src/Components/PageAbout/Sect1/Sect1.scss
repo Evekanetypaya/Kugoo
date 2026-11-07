@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.ab_top {
+    width: 100%;
+    padding: 20px 0 0;
+    .ab_crumbs {
+        width: 94vw;
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        .ab_crumbs_icon {
+            width: 15px;
+            height: 15px;
+        }
+        .ab_crumbs_text {
+            color: rgba(93, 108, 123, 1);
+            font-size: 12px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .ab_crumbs_now {
+            color: rgba(40, 39, 57, 1);
+            cursor: default;
+        }
+    }
+    .ab_banner {
+        position: relative;
+        width: 94vw;
+        max-width: 1380px;
+        height: 445px;
+        margin: 20px auto 0;
+        border-radius: 10px;
+        overflow: hidden;
+        .ab_banner_img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ab_banner_title {
+            position: absolute;
+            left: 135px;
+            top: 94px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 1.45;
+            letter-spacing: 0.02em;
+        }
+        .ab_stats {
+            position: absolute;
+            left: 135px;
+            top: 281px;
+            display: flex;
+            flex-direction: row;
+            gap: 43px;
+            .ab_stat_label {
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.3;
+            }
+            .ab_stat_value {
+                margin-top: 10px;
+                color: rgba(255, 255, 255, 1);
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+        .ab_play {
+            position: absolute;
+            left: 877px;
+            top: 186px;
+            width: 165px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            .ab_play_btn {
+                width: 104px;
+                height: 104px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgba(111, 115, 238, 1);
+                font-size: 28px;
+                transition: transform 0.2s;
+                span {
+                    margin-left: 5px;
+                }
+            }
+            .ab_play_text {
+                margin-top: 18px;
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.3;
+                text-align: center;
+            }
+            &:hover .ab_play_btn {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+
+.ab_about {
+    width: 94vw;
+    max-width: 1110px;
+    margin: 80px auto 0;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .ab_about_left {
+        width: 540px;
+        .ab_about_title {
+            color: rgba(40, 39, 57, 1);
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 1.45;
+            letter-spacing: 0.02em;
+        }
+        .ab_goal_title {
+            margin-top: 34px;
+            color: rgba(40, 39, 57, 1);
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .ab_goal_text {
+            margin-top: 16px;
+            color: rgba(40, 39, 57, 1);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.45;
+        }
+        .ab_list_title {
+            margin-top: 34px;
+            color: rgba(40, 39, 57, 1);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        .ab_list {
+            margin-top: 22px;
+            .ab_list_item {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 16px;
+                .ab_list_icon {
+                    flex-shrink: 0;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 1px;
+                }
+                .ab_list_text {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    b {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    .ab_cert {
+        position: relative;
+        flex-shrink: 0;
+        width: 452px;
+        height: 322px;
+        border: 8px solid rgba(93, 108, 123, 1);
+        .ab_cert_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .ab_cert_arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            transition: transform 0.2s;
+            &:hover {
+                transform: translateY(-50%) scale(1.08);
+            }
+        }
+        .ab_cert_left {
+            left: 16px;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(111, 115, 238, 1);
+        }
+        .ab_cert_right {
+            right: 16px;
+            background-color: rgba(111, 115, 238, 1);
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}

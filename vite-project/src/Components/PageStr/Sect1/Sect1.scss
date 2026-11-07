@@ -1,0 +1,422 @@
+a {
+    text-decoration: none;
+}
+.pageStrSect1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .breadcrumbsRow {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(136, 136, 136, 1);
+
+            .breadcrumbLink {
+                cursor: pointer;
+                transition: color 0.2s;
+                &:hover { color: rgba(40, 39, 57, 1); }
+            }
+
+            .breadcrumbCurrent { color: rgba(40, 39, 57, 1); }
+        }
+
+        .productMainBlock {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 40px;
+
+            .galleryCol {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .mainImageWrapper {
+                    position: relative;
+                    width: 100%;
+                    background-color: rgba(246, 248, 251, 1);
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 40px;
+
+                    .badgeNew {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        background-color: rgba(117, 210, 74, 1);
+                        color: #ffffff;
+                        padding: 6px 12px;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+
+                    .mainImage {
+                        width: 100%;
+                        height: auto;
+                        max-height: 400px;
+                        object-fit: contain;
+                    }
+                }
+
+                .thumbnailsGrid {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 10px;
+
+                    .thumbItem {
+                        cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+                        &.active {
+                            border-color: rgba(111, 115, 238, 1);
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            .infoCol {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .productHeader {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .productTitle {
+                        color: rgba(40, 39, 57, 1);
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        text-transform: uppercase;
+                    }
+
+                    .statsRow {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 24px;
+                        color: rgba(136, 136, 136, 1);
+                        font-size: 13px;
+                    }
+
+                    .actionsRow {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 24px;
+
+                        .actionItem {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 8px;
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 14px;
+                            font-weight: 500;
+                            cursor: pointer;
+
+                            .dotGreen {
+                                width: 8px;
+                                height: 8px;
+                                background-color: rgba(117, 210, 74, 1);
+                                border-radius: 50%;
+                            }
+
+                            img { width: 16px; height: 16px; object-fit: contain; }
+                        }
+                    }
+                }
+
+                .priceRow {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 30px;
+
+                    .priceBlock {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        .oldPrice { color: rgba(136, 136, 136, 1); font-size: 14px; text-decoration: line-through; }
+                        .newPrice { color: rgba(40, 39, 57, 1); font-size: 28px; font-weight: 600; }
+                    }
+
+                    .creditBlock {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 16px;
+                        background-color: rgba(246, 248, 251, 1);
+                        padding: 16px 24px;
+                        border-radius: 5px;
+
+                        .creditIcon { width: 32px; height: 32px; object-fit: contain; }
+
+                        .creditText {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+                            font-size: 13px;
+                            color: rgba(40, 39, 57, 1);
+
+                            .creditLabel { opacity: 0.6; }
+                            .creditValue { font-weight: 500; }
+                        }
+                    }
+                }
+
+                .optionsSection {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .optionGroup {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        .groupTitleRow {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 8px;
+
+                            &.spaceBetween { justify-content: space-between; }
+
+                            .questionIcon { width: 14px; height: 14px; cursor: pointer; opacity: 0.6; }
+
+                            .timerText {
+                                font-size: 13px;
+                                color: rgba(136, 136, 136, 1);
+                                strong { color: rgba(40, 39, 57, 1); font-weight: 600; }
+                            }
+                        }
+
+                        .groupTitle {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        &.tireGroup {
+                            .tireRow {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                padding-bottom: 20px;
+                                border-bottom: 1px solid rgba(235, 235, 235, 1);
+
+                                .tireInfo {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+
+                                    .tireName { color: rgba(40, 39, 57, 1); font-size: 15px; font-weight: 600; }
+                                    .tireDesc { color: rgba(40, 39, 57, 1); font-size: 13px; }
+                                    .tirePrice { color: rgba(40, 39, 57, 1); font-size: 14px; font-weight: 600; }
+                                }
+
+                                .changeLink {
+                                    color: rgba(111, 115, 238, 1);
+                                    font-size: 13px;
+                                    cursor: pointer;
+                                    &:hover { opacity: 0.8; }
+                                }
+                            }
+                        }
+
+                        .buttonsGrid {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 16px;
+
+                            .optionBtn {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                gap: 4px;
+                                padding: 20px;
+                                border: 1px solid rgba(235, 235, 235, 1);
+                                border-radius: 5px;
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 14px;
+                                font-weight: 400;
+                                cursor: pointer;
+                                transition: all 0.2s;
+
+                                &.active {
+                                    border-color: rgba(111, 115, 238, 1);
+                                    color: rgba(111, 115, 238, 1);
+                                }
+
+                                .btnName { font-weight: 500; }
+                                .btnPrice { font-size: 12px; opacity: 0.6; }
+
+                                .colorCircle {
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    margin-bottom: 8px;
+
+                                    &.colorPink { background-color: rgba(255, 105, 225, 1); }
+                                    &.colorBlue { background-color: rgba(111, 115, 238, 1); }
+                                    &.colorRed { background-color: rgba(238, 104, 95, 1); }
+                                }
+                            }
+                        }
+
+                        .giftBanner {
+                            background-color: rgba(246, 248, 251, 1);
+                            border-radius: 10px;
+                            padding: 24px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+
+                            .giftBannerTitle {
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+
+                            .giftsRow {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 20px;
+
+                                .giftItem {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 12px;
+                                    width: 50%;
+
+                                    img { width: 32px; height: 32px; object-fit: contain; }
+                                    span { color: rgba(40, 39, 57, 1); font-size: 11px; line-height: 1.4; }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .finalPurchaseBox {
+                    background-color: rgba(246, 248, 251, 1);
+                    border-radius: 10px;
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .finalPriceRow {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .finalPrice {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 32px;
+                            font-weight: 600;
+                        }
+
+                        .heartBtn {
+                            width: 44px;
+                            height: 44px;
+                            background-color: #ffffff;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            img { width: 20px; height: 20px; object-fit: contain; opacity: 0.5; }
+                        }
+                    }
+
+                    .deliveryInfo {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 12px;
+
+                        img { width: 24px; height: 24px; object-fit: contain; }
+
+                        .deliveryText {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px;
+                            
+                            .deliveryTitle { color: rgba(40, 39, 57, 1); font-size: 14px; font-weight: 600; }
+                            .deliveryDesc { color: rgba(100, 100, 100, 1); font-size: 13px; }
+                        }
+                    }
+
+                    .purchaseBtnsRow {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+
+                        button {
+                            flex: 1;
+                            border-radius: 5px;
+                            padding: 16px 0;
+                            font-size: 15px;
+                            font-weight: 500;
+                            cursor: pointer;
+                            transition: opacity 0.2s;
+                            &:hover { opacity: 0.9; }
+
+                            &.btnBuyOneClick {
+                                background-color: rgba(111, 115, 238, 1);
+                                color: #ffffff;
+                                border: none;
+                            }
+
+                            &.btnAddToCart {
+                                background-color: transparent;
+                                color: rgba(111, 115, 238, 1);
+                                border: 1px solid rgba(111, 115, 238, 1);
+                            }
+                        }
+                    }
+                }
+
+                .buyLaterLink {
+                    text-align: center;
+                    color: rgba(111, 115, 238, 1);
+                    font-size: 13px;
+                    cursor: pointer;
+                    &:hover { opacity: 0.8; }
+                }
+            }
+        }
+    }
+}

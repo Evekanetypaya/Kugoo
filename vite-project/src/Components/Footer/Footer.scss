@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    .footer_sub {
+        width: 100%;
+        height: 94px;
+        background-color: rgba(111, 115, 238, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer_sub_container {
+            width: 94vw;
+            max-width: 1110px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .sub_title {
+                color: rgba(255, 255, 255, 1);
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.4;
+                letter-spacing: 0.02em;
+            }
+            .sub_input {
+                width: 400px;
+                height: 52px;
+                padding: 0 24px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                background-color: rgba(255, 255, 255, 0.22);
+                color: rgba(255, 255, 255, 1);
+                font-size: 16px;
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.85);
+                }
+            }
+            .sub_btn {
+                width: 137px;
+                height: 52px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(111, 115, 238, 1);
+                font-size: 16px;
+                font-weight: 400;
+                cursor: pointer;
+                transition: transform 0.2s;
+                &:hover {
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+    .footer_main {
+        width: 100%;
+        background-color: rgba(244, 247, 251, 1);
+        padding: 52px 0 28px;
+        .footer_container {
+            width: 94vw;
+            max-width: 1110px;
+            margin: 0 auto;
+            .footer_cols {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .col_title {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .col_link {
+                    margin-top: 14px;
+                    color: rgba(93, 108, 123, 1);
+                    font-size: 15px;
+                    font-weight: 400;
+                    cursor: pointer;
+                    transition: color 0.2s;
+                    &:hover {
+                        color: rgba(111, 115, 238, 1);
+                    }
+                }
+                .col_catalog {
+                    width: 250px;
+                    .col_link {
+                        margin-top: 15px;
+                    }
+                    .col_title + .col_link {
+                        margin-top: 24px;
+                    }
+                }
+                .col_buyers {
+                    width: 354px;
+                    .buyers_lists {
+                        margin-top: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 44px;
+                        div {
+                            width: 140px;
+                        }
+                    }
+                }
+                .col_contacts {
+                    width: 478px;
+                    .contacts_top {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        .call_link {
+                            color: rgba(111, 115, 238, 1);
+                            font-size: 13px;
+                            cursor: pointer;
+                        }
+                    }
+                    .contacts_grid {
+                        margin-top: 24px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 28px 24px;
+                        .contact_block {
+                            .contact_label {
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 13px;
+                                font-weight: 400;
+                            }
+                            .contact_phone {
+                                margin-top: 6px;
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 18px;
+                                font-weight: 600;
+                                white-space: nowrap;
+                            }
+                            .contact_time {
+                                margin-top: 8px;
+                                color: rgba(93, 108, 123, 1);
+                                font-size: 13px;
+                            }
+                            .shop_name {
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 1.35;
+                            }
+                            .shop_addr {
+                                margin-top: 4px;
+                                color: rgba(40, 39, 57, 1);
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 1.35;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_line {
+                margin-top: 44px;
+                border-top: 1px solid rgba(227, 232, 240, 1);
+            }
+            .footer_mid {
+                margin-top: 34px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .mid_left {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 24px;
+                    .footer_logo {
+                        height: 26px;
+                        width: auto;
+                        display: block;
+                        margin-right: 30px;
+                    }
+                    .store_img {
+                        height: 45px;
+                        width: auto;
+                        cursor: pointer;
+                    }
+                }
+                .mid_right {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    .social_card {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+                        width: 123px;
+                        height: 45px;
+                        padding: 0 12px;
+                        border-radius: 6px;
+                        background-color: rgba(255, 255, 255, 1);
+                        cursor: pointer;
+                        .social_icon {
+                            flex-shrink: 0;
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                        }
+                        .social_name {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 1.2;
+                        }
+                        .social_count {
+                            color: rgba(93, 108, 123, 1);
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+            .footer_bottom {
+                margin-top: 28px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .bottom_left {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 44px;
+                    .bottom_link {
+                        color: rgba(93, 108, 123, 1);
+                        font-size: 13px;
+                        cursor: pointer;
+                        &:hover {
+                            color: rgba(111, 115, 238, 1);
+                        }
+                    }
+                }
+                .bottom_right {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 36px;
+                    .pay_list {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                        .pay_img {
+                            width: 34px;
+                            height: 23px;
+                            object-fit: contain;
+                        }
+                    }
+                    .chat_box {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 12px;
+                        .chat_text {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                        .chat_icon {
+                            height: 18px;
+                            width: auto;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

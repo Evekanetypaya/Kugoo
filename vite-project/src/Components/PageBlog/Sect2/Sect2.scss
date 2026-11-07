@@ -1,0 +1,201 @@
+a{
+        text-decoration: none;
+        color: inherit;
+    }
+.viewedSect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .sectionTitle {
+            color: rgba(40, 39, 57, 1);
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .sliderContainer {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .cardsRow {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                overflow: hidden;
+                width: 100%;
+                padding: 10px 5px; 
+
+                .productCard {
+                    min-width: calc((100% - 60px) / 4);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    border: 1px solid rgba(235, 235, 235, 1);
+                    border-radius: 10px;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    transition: box-shadow 0.3s ease;
+
+                    &:hover {
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+                    }
+
+                    .cardHeader {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .badgeNew {
+                            background-color: rgba(117, 210, 74, 1);
+                            color: #ffffff;
+                            padding: 4px 10px;
+                            border-radius: 5px;
+                            font-size: 11px;
+                            font-weight: 500;
+                        }
+
+                        .compareIcon {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                            opacity: 0.6;
+                            transition: opacity 0.2s;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .cardImageWrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 180px;
+
+                        .productImg {
+                            max-width: 100%;
+                            max-height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .cardInfo {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .productName {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 1.4;
+                        }
+
+                        .productDesc {
+                            color: rgba(136, 136, 136, 1);
+                            font-size: 12px;
+                        }
+                    }
+
+                    .cardPurchase {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .productPrice {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+                        .actionButtons {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+
+                            .iconBtn {
+                                width: 36px;
+                                height: 36px;
+                                border: 1px solid rgba(220, 220, 220, 1);
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                transition: border-color 0.2s;
+
+                                &:hover {
+                                    border-color: rgba(111, 115, 238, 1);
+                                }
+
+                                img {
+                                    width: 14px;
+                                    height: 14px;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+
+                    .buyBtn {
+                        width: 100%;
+                        background-color: rgba(111, 115, 238, 1);
+                        color: #ffffff;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 12px 0;
+                        font-size: 14px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: opacity 0.2s;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+
+            .sliderNextBtn {
+                position: absolute;
+                right: -25px;
+                width: 50px;
+                height: 50px;
+                background-color: rgba(111, 115, 238, 1);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0px 4px 15px rgba(111, 115, 238, 0.4);
+                z-index: 10;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                    object-fit: contain;
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+}

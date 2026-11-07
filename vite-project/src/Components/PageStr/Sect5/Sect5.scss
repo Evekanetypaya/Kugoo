@@ -1,0 +1,307 @@
+a {
+    text-decoration: none;
+}
+.pageStrSect5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 80px;
+
+    .containerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .headerBlock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+
+            .mainTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.4;
+                text-transform: uppercase;
+            }
+
+            .bonusSubtitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .topBonusesRow {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                margin-top: 10px;
+
+                .bonusCard {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+                    padding: 20px 30px;
+                    border: 1px solid rgba(235, 235, 235, 1);
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                    text-align: left;
+
+                    .bonusIcon {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+
+                    .bonusText {
+                        color: rgba(100, 100, 100, 1);
+                        font-size: 13px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+
+        .quizBlock {
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(246, 248, 251, 1);
+            border-radius: 10px;
+            overflow: hidden;
+
+            .quizLeft {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                padding: 40px 60px;
+                gap: 40px;
+
+                .quizStepHeader {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 12px;
+
+                    .stepIcon {
+                        width: 24px;
+                        height: 24px;
+                        object-fit: contain;
+                        opacity: 0.6;
+                    }
+
+                    .stepText {
+                        color: rgba(136, 136, 136, 1);
+                        font-size: 13px;
+                        line-height: 1.4;
+                    }
+                }
+
+                .quizQuestion {
+                    color: rgba(40, 39, 57, 1);
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                }
+
+                .optionsGrid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+
+                    .optionCard {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 16px;
+                        background-color: #ffffff;
+                        border: 1px solid rgba(235, 235, 235, 1);
+                        border-radius: 5px;
+                        padding: 20px;
+                        cursor: pointer;
+                        transition: all 0.2s;
+
+                        .radioCircle {
+                            width: 18px;
+                            height: 18px;
+                            border: 2px solid rgba(220, 220, 220, 1);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all 0.2s;
+                        }
+
+                        .optionText {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 14px;
+                        }
+
+                        &.active {
+                            border-color: rgba(111, 115, 238, 1);
+                            
+                            .radioCircle {
+                                border-color: rgba(111, 115, 238, 1);
+                                
+                                &::after {
+                                    content: '';
+                                    width: 8px;
+                                    height: 8px;
+                                    background-color: rgba(111, 115, 238, 1);
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .quizFooter {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin-top: 20px;
+
+                    .progressWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        width: 40%;
+
+                        .progressText {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 12px;
+                            font-weight: 500;
+                        }
+
+                        .progressBar {
+                            width: 100%;
+                            height: 6px;
+                            background-color: #ffffff;
+                            border-radius: 3px;
+                            overflow: hidden;
+
+                            .progressFill {
+                                width: 5%;
+                                height: 100%;
+                                background-color: rgba(117, 210, 74, 1);
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+
+                    .navButtons {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            cursor: pointer;
+                            transition: opacity 0.2s;
+
+                            &:hover { opacity: 0.9; }
+
+                            &.btnPrev {
+                                width: 44px;
+                                height: 44px;
+                                background-color: transparent;
+                                border: 1px solid rgba(111, 115, 238, 1);
+                                img { width: 14px; height: 14px; filter: invert(41%) sepia(85%) saturate(3062%) hue-rotate(222deg) brightness(97%) contrast(92%); }
+                            }
+
+                            &.btnNext {
+                                background-color: rgba(111, 115, 238, 1);
+                                color: #ffffff;
+                                border: none;
+                                padding: 0 30px;
+                                height: 44px;
+                                img { width: 14px; height: 14px; filter: brightness(0) invert(1); }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .quizRight {
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+                border-left: 1px solid rgba(235, 235, 235, 1);
+                gap: 40px;
+
+                .managerProfile {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+
+                    .managerAvatar {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .managerInfo {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        .managerName {
+                            color: rgba(40, 39, 57, 1);
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+
+                        .managerRole {
+                            color: rgba(136, 136, 136, 1);
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .yellowBonusesList {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .yellowBonusCard {
+                        background-color: rgba(243, 167, 18, 1);
+                        border-radius: 10px;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 16px;
+
+                        .yellowBonusIcon {
+                            width: 24px;
+                            height: 24px;
+                            object-fit: contain;
+                            flex-shrink: 0;
+                        }
+
+                        .yellowBonusText {
+                            color: #ffffff;
+                            font-size: 12px;
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,219 @@
+a {
+    text-decoration: none;
+}
+.sect12 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    padding: 80px 0;
+
+    .promoBannerWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        background-color: rgba(111, 115, 238, 1);
+        border-radius: 10px;
+        padding: 50px 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .promoContent {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            width: 55%;
+
+            .badgeFree {
+                background-color: rgba(117, 210, 74, 1);
+                color: #ffffff;
+                padding: 4px 12px;
+                border-radius: 3px;
+                font-size: 11px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            .promoTitle {
+                color: #ffffff;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            .promoSubtitle {
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .benefitsList {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .benefitItem {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+
+                    .checkIcon {
+                        width: 16px;
+                        height: 16px;
+                        object-fit: contain;
+                    }
+
+                    .benefitText {
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .promoFormBox {
+            width: 420px;
+            flex-shrink: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px; 
+            color: #ffffff;
+
+            .formTitle {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.4;
+                text-transform: uppercase;
+            }
+
+            .formSubtitle {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.4;
+            }
+
+            .priceForm {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 100%;
+
+                .formInput {
+                    width: 100%;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border: none;
+                    border-radius: 5px;
+                    padding: 16px 20px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    outline: none;
+
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+
+                .formBtn {
+                    width: 100%;
+                    background-color: #ffffff;
+                    color: rgba(111, 115, 238, 1);
+                    border: none;
+                    border-radius: 5px;
+                    padding: 16px 20px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: opacity 0.2s;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+                .formAgreement {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap: 10px;
+                    text-align: left;
+
+                    .customCheckbox {
+                        cursor: pointer;
+                    }
+
+                    .agreementLabel {
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        color: rgba(255, 255, 255, 0.9);
+
+                        a {
+                            color: #ffffff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .statsWrapper {
+        width: 94vw;
+        max-width: 1184px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+
+        .statsTextCol {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 40%;
+
+            .statsTitle {
+                color: rgba(40, 39, 57, 1);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.3;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            .statsDesc {
+                color: rgba(40, 39, 57, 1);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+
+        .statsImageCol {
+            width: 55%;
+            display: flex;
+            justify-content: flex-end;
+
+            .analyticsImg {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+}
